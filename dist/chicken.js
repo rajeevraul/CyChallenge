@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Chicken = void 0;
 class Chicken {
     cluck() {
-        console.log('awooooooooo');
+        console.log('woof woof!');
     }
 }
 exports.Chicken = Chicken;

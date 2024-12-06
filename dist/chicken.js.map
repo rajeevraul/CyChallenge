@@ -1,1 +1,1 @@
-{"version":3,"file":"chicken.js","sourceRoot":"","sources":["../src/chicken.ts"],"names":[],"mappings":";;;AAAA,MAAa,OAAO;IAChB,KAAK;QACD,OAAO,CAAC,GAAG,CAAC,eAAe,CAAC,CAAC;IACjC,CAAC;CACJ;AAJD,0BAIC"}
+{"version":3,"file":"chicken.js","sourceRoot":"","sources":["../src/chicken.ts"],"names":[],"mappings":";;;AAAA,MAAa,OAAO;IAChB,KAAK;QACD,OAAO,CAAC,GAAG,CAAC,YAAY,CAAC,CAAC;IAC9B,CAAC;CACJ;AAJD,0BAIC"}

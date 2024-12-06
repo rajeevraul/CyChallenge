@@ -1,5 +1,5 @@
 export class Chicken {
     cluck() {
-        console.log('ibrsgajierbg!');
+        console.log('woof woof!');
     }
 }
