@@ -1,8 +1,7 @@
 import { ChineseRedEnvelopes } from "./ChineseRedEnvelopes";
 
-console.log("hello");
+console.log("still working");
 
+const envelope =  ChineseRedEnvelopes.amount(6,3);
 
-const envelope = new ChineseRedEnvelopes;
-
-envelope.amount();
+console.log("result: ${envelope}");

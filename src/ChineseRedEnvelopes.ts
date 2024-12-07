@@ -1,5 +1,5 @@
 export class ChineseRedEnvelopes {
-    amount() {
-        console.log('huat ahh!');
+    static amount(a: number, b: number): number {
+        return a + b;
     }
 }

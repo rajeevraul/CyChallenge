@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ChineseRedEnvelopes = void 0;
 class ChineseRedEnvelopes {
-    amount() {
-        console.log('huat ahh!');
+    static amount(a, b) {
+        return a + b;
     }
 }
 exports.ChineseRedEnvelopes = ChineseRedEnvelopes;
