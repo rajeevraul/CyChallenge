@@ -1,4 +1,4 @@
-import { Chicken } from "./chicken";
+import { Chicken } from "./ChineseRedEnvelopes";
 
 console.log("hello");
 
