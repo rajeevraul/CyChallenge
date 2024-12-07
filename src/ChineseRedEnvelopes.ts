@@ -1,5 +1,5 @@
-export class Chicken {
-    cluck() {
-        console.log('woof aewoooo');
+export class ChineseRedEnvelopes {
+    amount() {
+        console.log('huat ahh!');
     }
 }

@@ -1,7 +1,8 @@
-import { Chicken } from "./ChineseRedEnvelopes";
+import { ChineseRedEnvelopes } from "./ChineseRedEnvelopes";
 
 console.log("hello");
 
-const chicken = new Chicken();
 
-chicken.cluck();
+const envelope = new ChineseRedEnvelopes;
+
+envelope.amount();

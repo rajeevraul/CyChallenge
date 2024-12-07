@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Chicken = void 0;
-class Chicken {
-    cluck() {
-        console.log('woof aewoooo');
+exports.ChineseRedEnvelopes = void 0;
+class ChineseRedEnvelopes {
+    amount() {
+        console.log('huat ahh!');
     }
 }
-exports.Chicken = Chicken;
+exports.ChineseRedEnvelopes = ChineseRedEnvelopes;
 //# sourceMappingURL=ChineseRedEnvelopes.js.map
