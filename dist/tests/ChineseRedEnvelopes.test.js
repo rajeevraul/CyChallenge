@@ -4,7 +4,7 @@ const ChineseRedEnvelopes_1 = require("../ChineseRedEnvelopes");
 describe("Example add test function", () => {
     it("should correctly add two numbers", () => {
         const result = ChineseRedEnvelopes_1.ChineseRedEnvelopes.amount(6, 3);
-        expect(result).toBe(9); // Corrected expected value
+        expect(result).toBe(9);
     });
     it("should return 0 when adding 0 and 0", () => {
         const result = ChineseRedEnvelopes_1.ChineseRedEnvelopes.amount(0, 0);
