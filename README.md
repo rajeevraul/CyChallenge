@@ -24,7 +24,7 @@ Choose 'Tasks: Run Build Task'
 
 This way, there's no need to keep compiling by entering 'tsc' into the terminal
 
-To veiw unit tests: 
+To view unit tests: 
 
 -npm test
 
