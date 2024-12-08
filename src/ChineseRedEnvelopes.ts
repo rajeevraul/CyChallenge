@@ -21,6 +21,7 @@ export class ChineseRedEnvelopes {
             const IndividualMaxAmount = amountRemaining - (people - i - 1) * 0.5;
 
             // Generates and rounds amount to the nearest $0.5 given to the person
+            // Add 0.5 to ensure minimum ampunt (non zero amount)
             const rawAmount = Math.random() * (IndividualMaxAmount - 0.5) + 0.5;
             const roundedAmount= Math.round(rawAmount * 2) / 2;
 
@@ -35,7 +36,7 @@ export class ChineseRedEnvelopes {
         const finalAllocation = Math.round(amountRemaining * 2) / 2;
         amountReceived.push(finalAllocation);
 
-        // Return amoount array 
+        // Return amount array 
         return amountReceived;
     }
 }
