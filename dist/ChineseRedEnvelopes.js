@@ -9,12 +9,14 @@ class ChineseRedEnvelopes {
         const amountReceived = [];
         let amountRemaining = amount;
         for (let i = 0; i < people - 1; i++) {
-            const IndividualamountReceived = parseFloat((Math.random() * (amountRemaining - (people - i - 1) * 0.01)).toFixed(2));
-            amountReceived.push(IndividualamountReceived);
-            amountRemaining -= IndividualamountReceived;
+            const IndividualMaxAmount = amountRemaining - (people - i - 1) * 0.5;
+            const rawAmount = Math.random() * IndividualMaxAmount;
+            const roundedAmount = Math.round(rawAmount * 2) / 2;
+            amountReceived.push(roundedAmount);
+            amountRemaining -= roundedAmount;
         }
-        ;
-        amountReceived.push(parseFloat(amountRemaining.toFixed(2)));
+        const finalAllocation = Math.round(amountRemaining * 2) / 2;
+        amountReceived.push(finalAllocation);
         return amountReceived;
     }
 }
