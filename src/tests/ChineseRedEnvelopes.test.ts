@@ -1,18 +1,12 @@
-import { ChineseRedEnvelopes } from "../ChineseRedEnvelopes";   
+import { ChineseRedEnvelopes } from "../ChineseRedEnvelopes";
 
-describe("Example add test function", () => {
-    it("should correctly add two numbers", () => {
-        const result = ChineseRedEnvelopes.amount(4, 11);
-        expect(result).toBe(15);
-    });
+test("distributes the exact total amount among participants", () => {
+    const amount = 10;
+    const people = 5;
+    const amountReceived = ChineseRedEnvelopes.distribute(amount, people);
 
-    it("should return 0 when adding 0 and 0", () => {
-        const result = ChineseRedEnvelopes.amount(0, 0);
-        expect(result).toBe(0);
-    });
+    const totalDistributed = amountReceived.reduce((acc, curr) => acc + curr, 0);
+    expect(totalDistributed).toBeCloseTo(amount, 2);
 
-    it("should correctly add negative numbers", () => {
-        const result = ChineseRedEnvelopes.amount(-5, -3);
-        expect(result).toBe(-8);
-    });
+    expect(amountReceived.length).toBe(people);
 });

@@ -1,18 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const ChineseRedEnvelopes_1 = require("../ChineseRedEnvelopes");
-describe("Example add test function", () => {
-    it("should correctly add two numbers", () => {
-        const result = ChineseRedEnvelopes_1.ChineseRedEnvelopes.amount(4, 11);
-        expect(result).toBe(15);
-    });
-    it("should return 0 when adding 0 and 0", () => {
-        const result = ChineseRedEnvelopes_1.ChineseRedEnvelopes.amount(0, 0);
-        expect(result).toBe(0);
-    });
-    it("should correctly add negative numbers", () => {
-        const result = ChineseRedEnvelopes_1.ChineseRedEnvelopes.amount(-5, -3);
-        expect(result).toBe(-8);
-    });
+test("distributes the exact total amount among participants", () => {
+    const amount = 10;
+    const people = 5;
+    const amountReceived = ChineseRedEnvelopes_1.ChineseRedEnvelopes.distribute(amount, people);
+    const totalDistributed = amountReceived.reduce((acc, curr) => acc + curr, 0);
+    expect(totalDistributed).toBeCloseTo(amount, 2);
+    expect(amountReceived.length).toBe(people);
 });
 //# sourceMappingURL=ChineseRedEnvelopes.test.js.map

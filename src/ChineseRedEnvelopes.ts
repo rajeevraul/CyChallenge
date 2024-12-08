@@ -5,18 +5,17 @@ export class ChineseRedEnvelopes {
         }
 
         const amountReceived: number[] = [];
-        
+
         let amountRemaining = amount;
         for (let i = 0; i < people - 1; i++) {
             const IndividualamountReceived = parseFloat((Math.random() * (amountRemaining - (people - i - 1) * 0.01)).toFixed(2));
         
         amountReceived.push(IndividualamountReceived);
         amountRemaining -= IndividualamountReceived;
-        }
+        };
 
         amountReceived.push(parseFloat(amountRemaining.toFixed(2)));
 
         return amountReceived;
-        
     }
 }

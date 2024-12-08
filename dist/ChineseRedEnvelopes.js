@@ -13,6 +13,7 @@ class ChineseRedEnvelopes {
             amountReceived.push(IndividualamountReceived);
             amountRemaining -= IndividualamountReceived;
         }
+        ;
         amountReceived.push(parseFloat(amountRemaining.toFixed(2)));
         return amountReceived;
     }
