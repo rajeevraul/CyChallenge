@@ -8,9 +8,9 @@ Output will appear on CLI/terminal
 Alternatively to view results:
 On VSCode;
 Press 'F1'
->>Tasks: Configure Default Build Tasks
+Choose 'Tasks: Configure Default Build Tasks'
 Select "Tsc: watch tsconfig.json"
->>Tasks: Run Build Task
+Choose 'Tasks: Run Build Task'
 -Run from debug console on vscode
 This way, there's no need to keep compiling by entering 'tsc' into the terminal
 
