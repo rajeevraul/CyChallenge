@@ -5,6 +5,10 @@ export class ChineseRedEnvelopes {
             throw new Error("Amount and number of people must be more than zero");
         }
 
+        if (amount < people * 0.5) {
+            throw new Error(" Total amount is too lessgive at least $0.5 to each person");
+        }
+
         // Array to hold amount
         const amountReceived: number[] = [];
         // Tracks remaining amount 
@@ -17,7 +21,7 @@ export class ChineseRedEnvelopes {
             const IndividualMaxAmount = amountRemaining - (people - i - 1) * 0.5;
 
             // Generates and rounds amount to the nearest $0.5 given to the person
-            const rawAmount = Math.random() * (IndividualMaxAmount);
+            const rawAmount = Math.random() * (IndividualMaxAmount - 0.5) + 0.5;
             const roundedAmount= Math.round(rawAmount * 2) / 2;
 
             // Add rounded amount to given person
@@ -27,7 +31,7 @@ export class ChineseRedEnvelopes {
             amountRemaining -= roundedAmount;
         }
 
-        // Gives final reaminder to last person
+        // Gives final remainder to last person
         const finalAllocation = Math.round(amountRemaining * 2) / 2;
         amountReceived.push(finalAllocation);
 
