@@ -2,8 +2,8 @@ import { ChineseRedEnvelopes } from "../ChineseRedEnvelopes";
 
 describe("Example add test function", () => {
     it("should correctly add two numbers", () => {
-        const result = ChineseRedEnvelopes.amount(6, 3);
-        expect(result).toBe(9);
+        const result = ChineseRedEnvelopes.amount(4, 11);
+        expect(result).toBe(15);
     });
 
     it("should return 0 when adding 0 and 0", () => {

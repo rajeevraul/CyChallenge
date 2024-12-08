@@ -1,7 +1,7 @@
 import { ChineseRedEnvelopes } from "./ChineseRedEnvelopes";
 
-console.log("still working");
+const amount = 10;
+const people = 5;
 
-const envelope = ChineseRedEnvelopes.amount(6, 3);
-
-console.log(`result: ${envelope}`);
+const amountReceived = ChineseRedEnvelopes.distribute(amount, people);
+console.log("Amount Received:", amountReceived);

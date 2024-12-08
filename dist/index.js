@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const ChineseRedEnvelopes_1 = require("./ChineseRedEnvelopes");
-console.log("still working");
-const envelope = ChineseRedEnvelopes_1.ChineseRedEnvelopes.amount(6, 3);
-console.log(`result: ${envelope}`);
+const amount = 10;
+const people = 5;
+const amountReceived = ChineseRedEnvelopes_1.ChineseRedEnvelopes.distribute(amount, people);
+console.log("Amount Received:", amountReceived);
 //# sourceMappingURL=index.js.map
