@@ -10,3 +10,10 @@ test("Distributes the exact total amount among participants", () => {
     expect(amountReceived.length).toBe(people);
 });
 
+test("Throws an error if amount or number of people are zero or less", () => {
+    expect(() => ChineseRedEnvelopes.distribute(0, 5)).toThrow("Amount and number of people must be more than zero");
+    expect(() => ChineseRedEnvelopes.distribute(10, 0)).toThrow("Amount and number of people must be more than zero");
+    expect(() => ChineseRedEnvelopes.distribute(-10, 5)).toThrow("Amount and number of people must be more than zero");
+});
+
+
