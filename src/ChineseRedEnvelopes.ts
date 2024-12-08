@@ -10,7 +10,7 @@ export class ChineseRedEnvelopes {
         for (let i = 0; i < people - 1; i++) {
             const IndividualMaxAmount = amountRemaining - (people - i - 1) * 0.5;
             const rawAmount = Math.random() * (IndividualMaxAmount);
-            const roundedAmount= Math.round(rawAmount * 2) / 2;
+                const roundedAmount= Math.round(rawAmount * 2) / 2;
 
             amountReceived.push(roundedAmount);
             amountRemaining -= roundedAmount;

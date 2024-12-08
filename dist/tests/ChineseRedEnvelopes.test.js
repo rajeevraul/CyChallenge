@@ -28,4 +28,12 @@ test("Allocates non negative amounts to all participants", () => {
         expect(individualAmount).toBeGreaterThanOrEqual(0);
     });
 });
+test("Ensures all distributed amounts are rounded to the nearest $0.5", () => {
+    const amount = 10;
+    const people = 5;
+    const amountReceived = ChineseRedEnvelopes_1.ChineseRedEnvelopes.distribute(amount, people);
+    amountReceived.forEach(individualAmount => {
+        expect(individualAmount % 0.5).toBeCloseTo(0, 2);
+    });
+});
 //# sourceMappingURL=ChineseRedEnvelopes.test.js.map
