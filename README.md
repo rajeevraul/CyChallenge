@@ -2,7 +2,9 @@ Commands:
 
 To view results:
 -tsc
+
 -node dist/index.js
+
 Output will appear on CLI/terminal
 
 Alternatively to view results:
